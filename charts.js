@@ -123,7 +123,7 @@ function buildCharts(sample) {
         title: {text: "OTU ID"},
       }
     };
-    
+
     // Deliverable 2: 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout);
     
@@ -149,9 +149,11 @@ function buildCharts(sample) {
     ];
     
     // Deliverable 3: 5. Create the layout for the gauge chart.
-    var guageLayout = { width: 600, height: 500, margin: { t: 0, b: 0 } };
+    var guageLayout = { width: 500, height: 400, margin: { t: 0, b: 0 } };
     
     // Deliverable 3: 6. Use Plotly to plot the gauge data and layout.
     Plotly.newPlot("gauge", guageData, guageLayout);
   });
 }
+
+
